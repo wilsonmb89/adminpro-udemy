@@ -6,7 +6,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 import { RegisterComponent } from './login/register.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
+  { path: 'login', component: LoginComponent, data: { titulo: 'Login'} },
   { path: 'register', component: RegisterComponent },
   { path: '**', component: NopagefoundComponent }
 ];
